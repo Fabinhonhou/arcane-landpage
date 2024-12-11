@@ -1,0 +1,270 @@
+@font-face {
+    font-family: 'Arcane Nine';
+    src: url('fonts/Arcane Nine.woff2') format('woff2'),
+         url('fonts/Arcane Nine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding: 20px;
+    background-color: #4f59c5;
+    color: white; /* Opcional: Muda a cor do texto para branco para melhor contraste */
+    height: 1100px;
+    background-color: #ffffff; /* For browsers that do not support gradients */
+    background-image: linear-gradient(white, white, #b0b5ec, #848ce1, #6a74dc, #4f59c5, #2f3cc4, #1a25a6);
+}
+
+
+.navbar-nav {
+    margin-right: 110px;
+}
+
+.navbar-logo {
+    height: 100px;
+}
+
+.navbar-custom {
+    background-color: white; 
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: rgb(37, 34, 34); /* Cor do texto e links na navbar */
+    font-family: 'Arcane Nine', sans-serif;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #cce7ff; /* Cor ao passar o mouse */
+}
+
+.navbar-custom .dropdown-menu {
+    font-family: 'Arcane Nine', sans-serif;
+}
+
+@font-face {
+    font-family: 'Arcane Nine';
+    src: url('fonts/Arcane Nine.woff2') format('woff2'),
+         url('fonts/Arcane Nine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #4f59c5;
+    color: white; /* Opcional: Muda a cor do texto para branco para melhor contraste */
+    height: 2500px;
+    background-color: #ffffff; /* For browsers that do not support gradients */
+    background-image: linear-gradient(white, white, #b0b5ec, #848ce1, #6a74dc, #4f59c5, #2f3cc4, #1a25a6);
+}
+
+.navbar-nav {
+    margin: right 40px;
+}
+
+.navbar-logo {
+    height: 100px;
+}
+
+.navbar-custom {
+    background-color: white; 
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: rgb(37, 34, 34); /* Cor do texto e links na navbar */
+    font-family: 'Arcane Nine', sans-serif;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #cce7ff; /* Cor ao passar o mouse */
+}
+
+.navbar-custom .dropdown-menu {
+    font-family: 'Arcane Nine', sans-serif;
+}
+
+/*principal*/
+/*imagem*/
+.container {
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: flex-end; /* Alinha os itens ao final do contêiner (canto direito) */
+}
+.main-img {
+    text-align: center; /* Centraliza o texto abaixo da imagem */
+}
+.main-img img {
+    width: 200px; /* Define a largura da imagem */
+}
+.caption {
+    margin-top: 10px; /* Espaçamento acima do texto */
+    font-size: 14px; /* Tamanho da fonte do texto */
+    color: #333; /* Cor do texto */
+}
+
+/* texto*/
+.main-txt {
+    margin-left: 10px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+.main-txt h5{
+    font-family:  'Arcane Nine', sans-serif;
+}
+.main-txt .nesces{
+font-size:x-small;
+}
+
+/*resumo temporada */
+.season-recap{
+    margin-left: 32%;
+    margin-bottom: 4%;
+    font-family:  'Arcane Nine', sans-serif;
+}
+.recap-text{
+    margin-bottom: 4%;
+    font-size: 18px;
+}
+/*personagens*/
+.psng-apresentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Espaço entre os lados */
+    padding: 20px;
+}
+.text-section{
+    margin-left: 350px;
+    margin-bottom: 4%;
+    font-family:  'Arcane Nine', sans-serif;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 50px; /* Espaçamento entre as imagens */
+}
+.psng-image {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.psng-image img {
+    width: 250px; /* Largura fixa para as imagens */
+    height: auto; /* Mantém a proporção original */
+    display: block; /* Remove espaço em branco ao redor das imagens */
+}
+
+.divider {
+    width: 2px; /* Largura da divisória */
+    background-color: #000000; /* Cor da divisória */
+    height: auto; /* Ajusta a altura ao conteúdo */
+    align-self: stretch; /* Estende para acompanhar o conteúdo */
+}
+/* Estilo para a imagem e hover */
+.image-wrapper {
+    position: relative; /* Permite que o hover-box se posicione sobre a imagem */
+    width: 250px; /* Largura fixa para as imagens */
+    height: auto; /* Mantém a proporção original da imagem */
+    overflow: hidden; /* Impede que a imagem ultrapasse os limites da caixa */
+}
+
+.image-wrapper img {
+    display: block;
+    width: 100%; /* A imagem ocupa toda a largura da caixa */
+    height: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao efeito de zoom */
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Estilo para o hover-box */
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Começa invisível */
+    transition: opacity 0.3s ease; /* Transição suave para a opacidade */
+}
+
+.image-wrapper:hover .hover-box {
+    opacity: 1; /* Torna o hover-box visível ao passar o mouse */
+}
+
+/* Estilo para o texto dentro da hover-box */
+.hover-box p {
+    color: #ffffff !important; /* Força a cor do texto a ser amarela */
+    font-size: 18px; /* Tamanho de fonte do texto */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Tamanho de fonte em negrito */
+}
+
+/* Estilo para o texto abaixo da imagem */
+.psng-image p {
+    color: #000000; /* Cor do texto abaixo da imagem (branco) */
+    font-size: 14px; /* Tamanho do texto */
+    margin-top: 10px; /* Espaço entre a imagem e o texto */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-align: center;
+}
+
+/*próxima temporada*/
+.wait-next{
+    margin-top: 4%;
+    margin-left: 350px;
+    font-family:  'Arcane Nine', sans-serif;
+    color: white;
+}
+.wait-text{
+    font-size: 18px;
+    color: #ecebf3;
+}
+
+/*divisor*/
+.diviser {
+    width: 1200px; /* Ocupa toda a largura */
+    height: 2px; /* Espessura da linha */
+    background-color: #000; /* Cor da linha */
+    margin: 20px 20px; /* Espaçamento acima e abaixo */
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    max-width: 70rem;
+    margin: auto;
+    padding: 2.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  
+  .footer-nav a {
+    margin: 0 0.5rem;
+    color: white;
+    font-family: 'Arcane Nine', sans-serif;
+  }
+
+  .more-content{
+    font-size: 15px;
+    color: #000;
+  }
+
+  .copy{
+    color: #000;
+  }
+  
